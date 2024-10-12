@@ -27,7 +27,7 @@ function Feeling_1(){
 
 return(
 <div>
-    <h2> Page 1 of 6 </h2>
+    <h4> Page 1 of 6 </h4>
 <h1>How are you feeling today?</h1>
     
 <input data-testid="input"

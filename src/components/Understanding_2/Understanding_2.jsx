@@ -23,7 +23,7 @@ const handleClick = () => {
 }
 return(
 <div>
-<h2> Page 2 of 6 </h2>
+<h4> Page 2 of 6 </h4>
 <h1>How well are you understanding the content?</h1>
     
 <input data-testid="input"

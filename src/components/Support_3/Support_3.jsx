@@ -21,7 +21,7 @@ function Support_3(){
     }
 return(
 <div>
-<h2> Page 3 of 6 </h2>
+<h4> Page 3 of 6 </h4>
 
 <h1>How well are you being supported?</h1>
     
