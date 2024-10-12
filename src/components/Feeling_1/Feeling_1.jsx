@@ -7,18 +7,18 @@ function Feeling_1(){
     const dispatch = useDispatch();
     
     
-    let [Feeling, setFeeling] = useState({Feeling :"" })
+    const [feeling, setFeeling] = useState("");
     
-    const handleChange = (value) => {
-    setFeeling(value);
+    const handleChange = (event) => {
+    setFeeling(event.target.value);
+    console.log(feeling);
+    
    }
-
-
 
     const handleClick = () => {
         dispatch({
-            type : FEEDBACK1,
-            payload : {Feeling}
+            type : 'FEEDBACK1',
+            payload : {feeling : feeling}
         })
      history.push("/Understanding_2");
      console.log("I was here")
@@ -31,8 +31,8 @@ return(
 <h1>How are you feeling today?</h1>
     
 <input data-testid="input"
-value = {Feeling}
-onChange={(event) => handleChange(event.target.value)}
+value = {feeling}
+onChange={handleChange}
 />
 <button data-testid="next" onClick={handleClick}>Next</button> 
 

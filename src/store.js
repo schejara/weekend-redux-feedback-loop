@@ -1,5 +1,6 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux';
-import logger from 'redux-logger'
+import logger from "redux-logger";
+
 
 const feelingStore = (state = [], action) => {
     if (action.type === 'FEEDBACK1'){
